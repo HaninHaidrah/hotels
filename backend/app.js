@@ -7,7 +7,7 @@ const hotelRoute=require("./routers/routes/hotel")
 const roomRoute=require("./routers/routes/room")
 
 
-sequelize.sync({alter:true});
+sequelize.sync({force:true});
 app.use(express.json());
 app.use(cors());
 

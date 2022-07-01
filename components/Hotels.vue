@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-row>
+    {{hotels}}
       <v-col cols="4">
         <v-card
           class="mx-auto my-12"
@@ -91,6 +92,7 @@
 import UpdateHotel from "./UpdateHotel.vue";
 import PopUP from "./PopUp.vue";
 export default {
+  name:"Hotel",
   components: { UpdateHotel, PopUP },
   data() {
     return {

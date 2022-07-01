@@ -9,8 +9,8 @@
 import AddHotel from "../components/AddHotel.vue";
 import axios from "axios";
 import Hotel from "../components/Hotels.vue";
-import io from "socket.io-client";
-import moment from "moment";
+// import io from "socket.io-client";
+// import moment from "moment";
 
 export default {
   components: { AddHotel, Hotel },
@@ -21,9 +21,6 @@ export default {
       hotels: "",
     };
   },
-  created() {
-    this.connectToServer();
-  },
   mounted() {
     const allData = async () => {
       let res = await axios.get("http://localhost:5000/hotels/");
@@ -32,12 +29,6 @@ export default {
 
     allData();
   },
-  methods:{
-    connectToServer(){
-      this.socket=io.connect(``,{secure:true})
-
-      
-    }
-  }
+ 
 };
 </script>

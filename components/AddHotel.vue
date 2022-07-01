@@ -3,6 +3,9 @@
     <v-btn class="mx-2" fab dark color="indigo" @click="dialog = ture">
       <v-icon dark> mdi-plus </v-icon>
     </v-btn>
+
+      {{rooms}}
+
     <v-card style="margin-top: 5%">
       <v-card-title>
         <span class="text-h5">Hotels</span>
@@ -38,7 +41,7 @@
               <v-autocomplete
                 v-model="selectedRooms"
                 :items="rooms"
-                item-text="roomName"
+                item-text="roomId"
                 label="select the room "
                 multiple
                 return-object

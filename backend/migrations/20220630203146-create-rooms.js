@@ -14,13 +14,10 @@ module.exports = {
       roomDescription: {
         type: Sequelize.STRING
       },
-      roomFacilites: {
+      record_status: {
         type: Sequelize.STRING
       },
       roomId: {
-        type: Sequelize.INTEGER
-      },
-      record_status: {
         type: Sequelize.STRING
       },
       createdAt: {
